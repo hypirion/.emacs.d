@@ -16,11 +16,11 @@ Emacs 30.0.92 or higher, `ripgrep` (for consul) and `pandoc` (for
 markdown commands).
 
 I use Comic Code as a developer font. You should get it or replace the
-font in the `hypirion-`
+font in the `hypirion-gui.el` file.
 
 When starting up, be sure to run the following:
 
-- `M-x all-the-icons-install-fonts` [all-the-icons](https://github.com/domtronn/all-the-icons.el)
+- `M-x all-the-icons-install-fonts` ([all-the-icons](https://github.com/domtronn/all-the-icons.el))
 
 
 ## Sources
