@@ -1,11 +1,5 @@
 (setq hypirion-theme-current nil)
 
-(when nil
-      (set-face-attribute 'vertico-posframe-border nil
-                              :background "blue"
-                              :foreground "white"
-                              :weight 'bold))
-
 (defun hypirion-theme-load-gruvbox (theme)
   (when (not (equal hypirion-theme-current theme))
     (load-theme theme t)
