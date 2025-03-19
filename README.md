@@ -1,9 +1,10 @@
 # hyPiRion's emacs setup
 
-This is hyPiRion's emacs setup, mark 2. Not done at all, but the goal is to
-clean up cruft from my previous setup.
+This is hyPiRion's emacs setup, mark 2. Not done at all, but the goal
+is to clean up cruft from my previous setup.
 
-One aspect of this is to use tree-sitter and lsp stuff all over the place.
+One aspect of this is to use tree-sitter and lsp stuff all over the
+place.
 
 ## Treesit all over the place
 
@@ -27,7 +28,8 @@ When starting up, be sure to run the following:
 
 This remake was initially triggered by a video about
 [Elpaca](https://www.youtube.com/watch?v=5Ud-TE3iIQY), and me knowing
-doing <kbd>M-x package-list-packages</kbd>
+doing <kbd>M-x package-list-packages</kbd> wasn't exactly a repeatable
+process. 
 
 Lots of new stuff I hadn't initally heard about (Vertico, Consult,
 Corfu... the list goes on) was first detected in Marie-Hélène Burle's

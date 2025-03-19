@@ -18,6 +18,8 @@
     hypirion-orderless
     hypirion-marginalia
     hypirion-consult
+    hypirion-embark
+    hypirion-wgrep
     hypirion-project
 
     ;;;; global utilities
