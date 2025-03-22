@@ -22,6 +22,9 @@
     hypirion-wgrep
     hypirion-project
 
+    ;;;; autocompletion-related stuff
+    hypirion-corfu
+
     ;;;; global utilities
     hypirion-whitespace
     hypirion-magit

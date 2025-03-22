@@ -100,7 +100,16 @@
          ("s-o s-o" . other-window))
 
   :hook ((prog-mode . display-fill-column-indicator-mode)
-         (text-mode . turn-on-auto-fill)))
+         (text-mode . turn-on-auto-fill))
+
+  ;; more of the config should probably be here I guess..
+  :custom
+  ;; Enable indentation+completion using the TAB key.
+  ;; `completion-at-point' is often bound to M-TAB.
+  (tab-always-indent 'complete)
+
+  ;; no need for ispell at the moment
+  (text-mode-ispell-word-completion nil))
 
 
 (provide 'hypirion-emacs)

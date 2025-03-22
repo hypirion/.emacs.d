@@ -51,6 +51,10 @@ ended up with a small package just to drag in transient from (m)elpa
 to not have Magit depend on the one provided with emacs, which caused
 just pain and suffering.
 
+I think I understand what Cape does, but I don't really get the hype.
+I don't complete lines or files, and don't really use a dictionary,
+sooooo... Anyway
+
 # Copyright
 
 Copyright © 2025 Jean Niklas L'orange
