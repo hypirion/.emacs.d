@@ -1,6 +1,6 @@
 (use-package corfu
   :custom
-  (corfu-auto t)
+  (corfu-auto nil) ;; try without for now
   (corfu-auto-prefix 2)
   (corfu-auto-delay 0.25)
 
@@ -14,7 +14,3 @@
   (global-corfu-mode))
 
 (provide 'hypirion-corfu)
-
-
-
-

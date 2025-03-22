@@ -44,6 +44,16 @@ watching videos, and you also see unrelated tricks you may not usually
 come over by just reading some documentation. For setting up other
 things (like lsp-mode) it's not that important I guess, but we'll see.
 
+Thoughts on eglot vs. lsp-mode: Seems like flycheck and lsp-mode have
+more batteries included.. a lot of batteries included, according to
+some. Me included, maybe. However, flycheck and lsp-mode works well
+with those wonky languages I'm using, and especially because Clojure
+development with Eglot is hacky according to
+https://andreyor.st/posts/2023-09-09-migrating-from-lsp-mode-to-eglot/
+
+though maybe that's fixed now... Anyway, I'm going for flycheck and
+lsp-mode for now.
+
 ## Struggles
 
 Magit, transient and the right emacs version was a bit of a pain. I
@@ -53,7 +63,10 @@ just pain and suffering.
 
 I think I understand what Cape does, but I don't really get the hype.
 I don't complete lines or files, and don't really use a dictionary,
-sooooo... Anyway
+sooooo... Anyway.
+
+use-package with elpaca and `lsp-clojure` isn't obvious to me, so I'll
+have to discover what the thing is there.
 
 # Copyright
 

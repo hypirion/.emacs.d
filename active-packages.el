@@ -24,6 +24,8 @@
 
     ;;;; autocompletion-related stuff
     hypirion-corfu
+    hypirion-lsp
+    hypirion-flycheck
 
     ;;;; global utilities
     hypirion-whitespace
