@@ -20,11 +20,21 @@
       (call-interactively #'backward-delete-char)))
 
   (defun hypirion-vertico-tab-action ()
-    "Open the selected file if it's the only candidate, otherwise do normal TAB."
+    "Open the selected file if it's the only candidate and tab doesn't change content,
+otherwise do normal TAB."
     (interactive)
-    (if (and (= (length vertico--candidates) 1)
-             (not (string-suffix-p "/" (car vertico--candidates))))
-        (vertico-exit)
+    (if (= (length vertico--candidates) 1)
+        (let ((before-content (buffer-substring-no-properties
+                               (minibuffer-prompt-end) (point-max)))
+              (before-point (point)))
+          (vertico-insert)
+          (if (and (string= before-content
+                            (buffer-substring-no-properties
+                             (minibuffer-prompt-end) (point-max)))
+                   (= before-point (point)))
+              (vertico-exit)
+            ;; The content changed, so we've already done the insert
+            nil))
       (vertico-insert)))
 
   ;; Add these key bindings to the vertico-map
