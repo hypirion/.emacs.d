@@ -27,13 +27,19 @@
     hypirion-lsp
     hypirion-flycheck
 
+    ;;;; structural editing
+    hypirion-parens
+    
+
     ;;;; global utilities
     hypirion-whitespace
     hypirion-magit
 
+    ;;;; those hyped thingies
+    hypirion-aidermacs
+
     ;;;; specific filetypes
     hypirion-treesit-auto
-    hypirion-parens
     hypirion-clj
     hypirion-markdown))
 

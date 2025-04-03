@@ -24,6 +24,17 @@ When starting up, be sure to run the following:
 - `M-x all-the-icons-install-fonts` ([all-the-icons](https://github.com/domtronn/all-the-icons.el))
 
 
+### Hype stuff burning down trees
+
+I'm trying out aidermacs as an attempt to understand the hype.
+
+So get [aider](https://aider.chat/docs/install.html) installed
+following the steps here. Also add `ANTHROPIC_API_KEY` to your
+`.profile` or something Emacs will catch.
+
+I need to understand how people use this, as it seems a bit unwieldy
+atm.
+
 ## Sources
 
 This remake was initially triggered by a video about

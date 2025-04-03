@@ -10,3 +10,5 @@
 /session.*
 /auto-save-list
 /todo.org
+.aider*
+/tramp
