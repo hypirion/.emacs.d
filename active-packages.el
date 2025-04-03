@@ -29,8 +29,8 @@
 
     ;;;; structural editing
     hypirion-parens
+    hypirion-aggressive-indent
     
-
     ;;;; global utilities
     hypirion-whitespace
     hypirion-magit
