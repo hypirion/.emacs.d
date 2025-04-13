@@ -30,7 +30,7 @@
     ;;;; structural editing
     hypirion-parens
     hypirion-aggressive-indent
-    
+
     ;;;; global utilities
     hypirion-whitespace
     hypirion-magit
@@ -41,7 +41,8 @@
     ;;;; specific filetypes
     hypirion-treesit-auto
     hypirion-clj
-    hypirion-markdown))
+    hypirion-markdown
+    hypirion-go))
 
 (dolist (p hypirion-active-packages)
   (require p))
