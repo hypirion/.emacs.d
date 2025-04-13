@@ -24,6 +24,12 @@ When starting up, be sure to run the following:
 - `M-x all-the-icons-install-fonts` ([all-the-icons](https://github.com/domtronn/all-the-icons.el))
 
 
+### Requirements for Go development
+
+I think only
+[`gopls`](https://emacs-lsp.github.io/lsp-mode/page/lsp-gopls/) is
+needed.
+
 ### Hype stuff burning down trees
 
 I'm trying out aidermacs as an attempt to understand the hype.
@@ -40,7 +46,7 @@ atm.
 This remake was initially triggered by a video about
 [Elpaca](https://www.youtube.com/watch?v=5Ud-TE3iIQY), and me knowing
 doing <kbd>M-x package-list-packages</kbd> wasn't exactly a repeatable
-process. 
+process.
 
 Lots of new stuff I hadn't initally heard about (Vertico, Consult,
 Corfu... the list goes on) was first detected in Marie-Hélène Burle's
