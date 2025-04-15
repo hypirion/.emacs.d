@@ -5,7 +5,6 @@
   ;; Replace bindings. Lazily loaded by `use-package'.
 
   :bind (("M-s-b" . consult-buffer)
-         ("s-o f" . consult-project-buffer)
          ("s-o r" . consult-recent-file)
          ("s-o s s" . consult-ripgrep))
 
