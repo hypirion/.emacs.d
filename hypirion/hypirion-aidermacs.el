@@ -4,8 +4,10 @@
   :config
   ;; Anthropic_API_KEY is set up in .profile
   :custom
-  ; See the Configuration section below
+                                        ; See the Configuration section below
   (aidermacs-use-architect-mode t)
-  (aidermacs-default-model "sonnet"))
+  (aidermacs-default-model "sonnet")
+  (aidermacs-watch-files t)
+  (aidermacs-show-diff-after-change nil))
 
 (provide 'hypirion-aidermacs)
