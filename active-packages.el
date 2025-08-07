@@ -42,6 +42,7 @@
     hypirion-treesit-auto
     hypirion-clj
     hypirion-markdown
+    hypirion-kdl
     hypirion-go))
 
 (dolist (p hypirion-active-packages)
