@@ -39,11 +39,13 @@
     hypirion-aidermacs
 
     ;;;; specific filetypes
-    hypirion-treesit-auto
     hypirion-clj
-    hypirion-markdown
+    hypirion-go
+    hypirion-json
     hypirion-kdl
-    hypirion-go))
+    hypirion-markdown
+    hypirion-treesit-auto
+    ))
 
 (dolist (p hypirion-active-packages)
   (require p))
