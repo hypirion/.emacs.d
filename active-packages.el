@@ -45,7 +45,8 @@
     hypirion-kdl
     hypirion-markdown
     hypirion-treesit-auto
-    ))
+    hypirion-yuck
+    hypirion-scss))
 
 (dolist (p hypirion-active-packages)
   (require p))
