@@ -4,7 +4,7 @@
   :if window-system
   :init
   (set-face-attribute 'default nil
-                      :family "comiccode"
+                      :family "ComicCode Nerd Font"
                       :height 120)
   )
 
