@@ -1,7 +1,17 @@
 (use-package lsp-mode
   :hook ((lsp-mode . lsp-diagnostics-mode)
          (lsp-mode . lsp-completion-mode-maybe)
-         (lsp-mode . hypirion-corfu-lsp-setup))
+         (lsp-mode . hypirion-corfu-lsp-setup)
+
+         ;; Enable lsp-mode for specific languages
+         (clojure-mode . lsp-deferred)
+         (clojurec-mode . lsp-deferred)
+         (clojurescript-mode . lsp-deferred)
+         (clojure-mode . hypirion-lsp-keybindings)
+         (clojurec-mode . hypirion-lsp-keybindings)
+         (clojurescript-mode . hypirion-lsp-keybindings)
+
+         )
 
   :preface
   (defun lsp-completion-mode-maybe ()

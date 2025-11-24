@@ -1,5 +1,18 @@
 (use-package smartparens
   :ensure t
+  :preface
+  (defun hypirion-sp-splice-sexp-killing-backward ()
+    "Splice sexp killing backward, or delete backward if in empty pair.
+When point is inside an empty pair (e.g., (|)), delete backward.
+Otherwise, perform `sp-splice-sexp-killing-backward'.
+
+This is basically a hack because `sp-splice-sexp-killing-backward'
+doesn't properly work when we have an empty pair."
+    (interactive)
+    (if (sp-point-in-empty-sexp)
+        (sp-delete-char)
+      (sp-splice-sexp-killing-backward 1)))
+
   :hook ((emacs-lisp-mode . smartparens-strict-mode)
          (lisp-mode        . smartparens-strict-mode)
          (lisp-interaction-mode . smartparens-strict-mode)
@@ -12,7 +25,7 @@
               ("C-(" . sp-backward-slurp-sexp)
               ("C-{" . sp-backward-barf-sexp)
               ("M-n" . sp-splice-sexp-killing-forward)
-              ("M-p" . sp-splice-sexp-killing-backward))
+              ("M-p" . hypirion-sp-splice-sexp-killing-backward))
   :config
   (require 'smartparens-config)
 
@@ -33,11 +46,8 @@
 ;;
 ;; C-0 C-k doesn't delete backwards of the current line
 ;;
-;; (|) -- sp-splice-sexp-killing-backward
-;; |)
-;; (wtf)
-;;
-;; Parens are also balanced inside comments. Hrm.
+;; Parens are also balanced inside comments... which is fine I guess?
+
 
 (use-package highlight-parentheses
   :demand t
@@ -48,3 +58,4 @@
   (global-highlight-parentheses-mode 1))
 
 (provide 'hypirion-parens)
+
