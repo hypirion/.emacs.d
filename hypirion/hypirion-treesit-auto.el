@@ -19,7 +19,7 @@
      (markdown . ("https://github.com/tree-sitter-grammars/tree-sitter-markdown" "v0.4.1" nil nil nil))
      (rust . ("https://github.com/tree-sitter/tree-sitter-rust" "v0.23.3" nil nil nil))
      ))
-  (treesit-auto-langs '(bash go gomod python css html javascript json markdown kdl))
+  (treesit-auto-langs '(bash go gomod python css html javascript json markdown))
   ;; Note: rust excluded - using rust-mode with treesitter-derive instead
   )
 
