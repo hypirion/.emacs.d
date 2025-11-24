@@ -48,6 +48,7 @@
     hypirion-treesit-auto
     hypirion-yuck
     hypirion-scss
+    hypirion-rust
     hypirion-typst))
 
 (dolist (p hypirion-active-packages)

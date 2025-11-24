@@ -11,6 +11,10 @@
          (clojurec-mode . hypirion-lsp-keybindings)
          (clojurescript-mode . hypirion-lsp-keybindings)
 
+         (rust-mode . lsp-deferred)
+         (rust-mode . hypirion-lsp-keybindings)
+         (rust-mode . hypirion-lsp-format-and-organize-imports-on-save)
+
          )
 
   :preface
