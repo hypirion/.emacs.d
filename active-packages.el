@@ -34,6 +34,7 @@
     ;;;; global utilities
     hypirion-whitespace
     hypirion-magit
+    hypirion-envrc
 
     ;;;; those hyped thingies
     hypirion-aidermacs
