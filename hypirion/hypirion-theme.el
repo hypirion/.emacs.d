@@ -4,10 +4,6 @@
   (when (not (equal hypirion-theme-current theme))
     (load-theme theme t)
 
-    ;; this funny business relates to
-    ;; https://github.com/greduan/emacs-theme-gruvbox/issues/219
-    (set-face-attribute 'vertico-posframe-border nil :background "#8a8a8a")
-
     (setq hypirion-theme-current theme)))
 
 (use-package gruvbox-theme
