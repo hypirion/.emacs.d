@@ -24,6 +24,23 @@ When starting up, be sure to run the following:
 - `M-x all-the-icons-install-fonts` ([all-the-icons](https://github.com/domtronn/all-the-icons.el))
 
 
+### Requirement for Roc development
+
+The tree-sitter situation is kinda not so funny here. To get this up
+and running, do this
+
+``` shell
+$ cd /tmp
+$ git clone git@github.com:faldor20/tree-sitter-roc.git
+$ cd tree-sitter-roc
+$ git checkout 40e52f343f1b1f270d6ecb2ca898ca9b8cba6936
+# Needs tree-sitter-cli or an equivalent package for this:
+$ tree-sitter generate -b --libdir .
+$ mv roc.so ~/.emacs.d/tree-sitter/libtree-sitter-roc.so
+```
+
+Then you should have the tree-sitter situation under control.
+
 ### Requirements for Go development
 
 I think only
