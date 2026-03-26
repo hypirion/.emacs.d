@@ -5,7 +5,7 @@
   :init
   (set-face-attribute 'default nil
                       :family "ComicCode Nerd Font"
-                      :height 120)
+                      :height 110)
   )
 
 
