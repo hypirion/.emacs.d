@@ -42,6 +42,7 @@
     ;;;; specific filetypes
     hypirion-clj
     hypirion-go
+    hypirion-nix
     hypirion-roc
     hypirion-json
     hypirion-kdl
